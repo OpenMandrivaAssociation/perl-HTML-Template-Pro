@@ -1,5 +1,5 @@
 %define module   HTML-Template-Pro
-%define version    0.72
+%define version    0.74
 %define release    %mkrel 1
 
 Name:       perl-%{module}
