@@ -1,19 +1,20 @@
-%define module   HTML-Template-Pro
-%define version    0.76
-%define release    %mkrel 1
+%define upstream_name    HTML-Template-Pro
+%define upstream_version 0.80
 
-Name:       perl-%{module}
-Version:    %{version}
-Release:    %{release}
-License:    GPL or Artistic
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
+License:    GPL+ or Artistic
 Group:      Development/Perl
 Summary:    Perl/XS module to use HTML Templates from CGI scripts
-Source:     http://www.cpan.org/modules/by-module/HTML/%{module}-%{version}.tar.gz
-Url:        http://search.cpan.org/dist/%{module}
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/HTML/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires: perl-devel
 BuildRequires: perl(File::Spec)
 BuildRequires: perl(Test::More)
-BuildRoot:  %{_tmppath}/%{name}-%{version}
+BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Original HTML::Template is written by Sam Tregar, sam@tregar.com with
@@ -34,7 +35,7 @@ HTML::Template::Expr's tag EXPR="<expression>", including user-defined
 functions.
 
 %prep
-%setup -q -n %{module}-%{version} 
+%setup -q -n %{upstream_name}-%{upstream_version} 
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
