@@ -1,5 +1,5 @@
 %define upstream_name    HTML-Template-Pro
-%define upstream_version 0.81
+%define upstream_version 0.85
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -57,4 +57,3 @@ rm -rf %buildroot
 %{_mandir}/man3/*
 %perl_vendorarch/HTML
 %perl_vendorarch/auto/HTML
-
