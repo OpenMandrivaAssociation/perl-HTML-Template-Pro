@@ -15,6 +15,7 @@ BuildRequires: perl-devel
 BuildRequires: pcre-devel
 BuildRequires: perl(File::Spec)
 BuildRequires: perl(Test::More)
+BuildRequires: perl(JSON)
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
