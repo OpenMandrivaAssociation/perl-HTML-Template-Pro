@@ -1,9 +1,9 @@
 %define upstream_name    HTML-Template-Pro
-%define upstream_version 0.94
+%define upstream_version 0.9502
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 License:    GPL+ or Artistic
 Group:      Development/Perl
