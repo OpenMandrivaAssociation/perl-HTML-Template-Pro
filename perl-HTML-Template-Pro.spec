@@ -1,15 +1,15 @@
 %define upstream_name    HTML-Template-Pro
-%define upstream_version 0.9505
+%define upstream_version 0.9510
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:	3
+Version:    %perl_convert_version 0.9510
+Release:	1
 
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Summary:    Perl/XS module to use HTML Templates from CGI scripts
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/HTML/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:    http://www.cpan.org/modules/by-module/HTML/HTML-Template-Pro-0.9510.tar.gz
 
 BuildRequires: perl-devel
 BuildRequires: pcre-devel
@@ -153,5 +153,6 @@ rm -rf %buildroot
 
 * Mon Jul 14 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.70-1mdv2009.0
 - initial mdv release, generated with cpan2dist
+
 
 
