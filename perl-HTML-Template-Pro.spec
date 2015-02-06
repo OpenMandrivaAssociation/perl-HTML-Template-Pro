@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version 0.9510
-Release:	2
+Release:	3
 
 License:    GPL+ or Artistic
 Group:      Development/Perl
