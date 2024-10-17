@@ -8,7 +8,7 @@ Release:	3
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Summary:    Perl/XS module to use HTML Templates from CGI scripts
-Url:        http://search.cpan.org/dist/%{upstream_name}
+Url:        https://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/HTML/HTML-Template-Pro-0.9510.tar.gz
 
 BuildRequires: perl-devel
