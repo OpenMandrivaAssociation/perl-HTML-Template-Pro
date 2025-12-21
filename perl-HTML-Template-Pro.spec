@@ -11,6 +11,7 @@ Summary:    Perl/XS module to use HTML Templates from CGI scripts
 Url:        https://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/HTML/HTML-Template-Pro-0.9510.tar.gz
 
+BuildRequires:	make
 BuildRequires: perl-devel
 BuildRequires: pcre-devel
 BuildRequires: perl(File::Spec)
