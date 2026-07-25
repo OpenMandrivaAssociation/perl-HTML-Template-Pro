@@ -1,15 +1,15 @@
 %define upstream_name    HTML-Template-Pro
-%define upstream_version 0.9510
+%define upstream_version 0.9524
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version 0.9510
-Release:	3
+Version:    %{upstream_version}
+Release:	1
 
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Summary:    Perl/XS module to use HTML Templates from CGI scripts
-Url:        https://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/HTML/HTML-Template-Pro-0.9510.tar.gz
+Url:        https://metacpan.org/dist/HTML-Template-Pro
+Source0:    https://cpan.metacpan.org/authors/id/V/VI/VIY/HTML-Template-Pro-0.9524.tar.gz
 
 BuildRequires:	make
 BuildRequires: perl-devel
