@@ -1,9 +1,7 @@
 %define upstream_name    HTML-Template-Pro
-%define upstream_version 0.9524
-
 Name:       perl-%{upstream_name}
-Version:    %{upstream_version}
-Release:	1
+Version:    0.9524
+Release:	2
 
 License:    GPL+ or Artistic
 Group:      Development/Perl
@@ -38,7 +36,7 @@ HTML::Template::Expr's tag EXPR="<expression>", including user-defined
 functions.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version} 
+%setup -q -n %{upstream_name}-%{version} 
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -124,8 +122,7 @@ rm -rf %buildroot
 * Fri Jul 24 2009 Jérôme Quelin <jquelin@mandriva.org> 0.800.0-1mdv2010.0
 + Revision: 399300
 - update to 0.80
-- using %%perl_convert_version
-- fixed license field
+- using %0.9524 fixed license field
 
 * Wed Jul 15 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.76-1mdv2010.0
 + Revision: 396219
